@@ -3,7 +3,7 @@ package com.podium.technicalchallenge.network.queries
 object Queries {
     fun getMoviesQuery() =
 """
-    query GetMoviesQuery {
+query GetMoviesQuery {
   movies {
     title
     releaseDate
