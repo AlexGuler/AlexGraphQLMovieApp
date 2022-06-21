@@ -3,8 +3,8 @@ package com.podium.technicalchallenge.repos
 import com.podium.technicalchallenge.entity.MovieEntity
 import com.podium.technicalchallenge.network.queries.Queries
 import com.podium.technicalchallenge.network.retrofit.GraphQLService
-import com.podium.technicalchallenge.ui.genre.OrderBy
-import com.podium.technicalchallenge.ui.genre.Sort
+import com.podium.technicalchallenge.ui.OrderBy
+import com.podium.technicalchallenge.ui.Sort
 import com.podium.technicalchallenge.util.asJSONQueryString
 import javax.inject.Inject
 

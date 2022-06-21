@@ -1,7 +1,7 @@
 package com.podium.technicalchallenge.network.queries
 
-import com.podium.technicalchallenge.ui.genre.OrderBy
-import com.podium.technicalchallenge.ui.genre.Sort
+import com.podium.technicalchallenge.ui.OrderBy
+import com.podium.technicalchallenge.ui.Sort
 
 object Queries {
     fun getTopFiveMovies() =
@@ -109,7 +109,7 @@ query GetMovies {
 
     fun getMovies(sort: Sort, orderBy: OrderBy) =
         """
-query GetMoviesByGenre {
+query GetMovies {
     movies(sort: $sort, orderBy: "${orderBy.fieldName}") {
         id
         title
