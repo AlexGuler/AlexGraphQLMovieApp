@@ -10,8 +10,20 @@ query GetTopFiveMovies {
     movies(sort: DESC, orderBy: "voteAverage", limit: 5) {
         id
         title
-        posterPath
         voteAverage
+        posterPath
+        genres
+        director {
+            id
+            name
+        }
+        overview
+        cast {
+            profilePath
+            name
+            character
+            order
+        }
     }
 }
 """
@@ -29,8 +41,20 @@ query GetMoviesByGenre {
     movies(genre: "$genre") {
         id
         title
-        posterPath
         voteAverage
+        posterPath
+        genres
+        director {
+            id
+            name
+        }
+        overview
+        cast {
+            profilePath
+            name
+            character
+            order
+        }
     }
 }
 """
@@ -41,8 +65,20 @@ query GetMoviesByGenre {
     movies(genre: "$genre", sort: $sort, orderBy: "${orderBy.fieldName}") {
         id
         title
-        posterPath
         voteAverage
+        posterPath
+        genres
+        director {
+            id
+            name
+        }
+        overview
+        cast {
+            profilePath
+            name
+            character
+            order
+        }
     }
 }
 """
@@ -51,10 +87,22 @@ query GetMoviesByGenre {
         """
 query GetMovies {
     movies {
-        id
+                id
         title
-        posterPath
         voteAverage
+        posterPath
+        genres
+        director {
+            id
+            name
+        }
+        overview
+        cast {
+            profilePath
+            name
+            character
+            order
+        }
     }
 }
 """
@@ -65,8 +113,20 @@ query GetMoviesByGenre {
     movies(sort: $sort, orderBy: "${orderBy.fieldName}") {
         id
         title
-        posterPath
         voteAverage
+        posterPath
+        genres
+        director {
+            id
+            name
+        }
+        overview
+        cast {
+            profilePath
+            name
+            character
+            order
+        }
     }
 }
 """

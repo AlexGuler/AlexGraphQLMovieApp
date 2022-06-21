@@ -1,5 +1,6 @@
 package com.podium.technicalchallenge.util
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.viewbinding.ViewBinding
@@ -16,3 +17,5 @@ fun <T : ViewBinding> ViewGroup.toBinding(
 fun String.asJSONQueryString() = JSONObject().apply {
     put("query", this@asJSONQueryString)
 }.toString()
+
+fun Context.dipToPx(dipValue: Int): Int = (dipValue * resources.displayMetrics.density).toInt()

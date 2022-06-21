@@ -37,7 +37,7 @@
 
     <!-- Detail View -->
     <string name="detail_genre">Genre:</string>
-    <string name="detail_rating">Rating: %1$f</string>
+    <string name="detail_rating">Rating: %1$.1f</string>
     <string name="detail_director">Director: %1$s</string>
 
 <!--    detail_rating-->
