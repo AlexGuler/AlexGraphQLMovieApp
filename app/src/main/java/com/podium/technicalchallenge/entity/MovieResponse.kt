@@ -1,6 +1,8 @@
 package com.podium.technicalchallenge.entity
 
+import android.os.Parcelable
 import com.google.gson.annotations.SerializedName
+import kotlinx.parcelize.Parcelize
 
 data class MovieResponse(
     @SerializedName("data")
@@ -12,9 +14,14 @@ data class Movies(
     val movies: List<MovieEntity>
 )
 
+@Parcelize
 data class MovieEntity(
+    @SerializedName("id")
+    val id: Int,
     @SerializedName("title")
     val title: String,
-    @SerializedName("releaseDate")
-    val releaseDate: String
-)
+    @SerializedName("posterPath")
+    val imageUrl: String,
+    @SerializedName("voteAverage")
+    val rating: Float,
+) : Parcelable

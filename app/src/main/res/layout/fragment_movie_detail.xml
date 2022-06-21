@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/detailImage"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/movie_image"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/endgame" />
+
+    <TextView
+        android:id="@+id/detailTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detailImage"
+        app:layout_constraintTop_toTopOf="@+id/detailImage"
+        tools:text="Avengers: Endgame" />
+
+    <TextView
+        android:id="@+id/detailRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@+id/detailImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailTitle"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginHorizontal="5dp"
+        tools:text="Rating: 8.3" />
+
+    <TextView
+        android:id="@+id/detailGenres"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="5dp"
+        android:text="@string/detail_genre"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/detailImage"
+        app:layout_constraintTop_toBottomOf="@+id/detailRating" />
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:id="@+id/detailFlexBoxLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="5dp"
+        app:alignContent="stretch"
+        app:layout_constraintBottom_toBottomOf="@+id/detailImage"
+        app:alignItems="stretch"
+        app:flexWrap="wrap"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/detailImage"
+        app:layout_constraintTop_toBottomOf="@+id/detailGenres">
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <TextView
+        android:id="@+id/detailDirector"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailImage"
+        tools:text="Director: The Director"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/detailDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailDirector"
+        tools:text="This is a description of the movie. This is a description of the movie. This is a description of the movie. This is a description of the movie."
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintHorizontal_bias="0.0" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/detailCastRecyclerView"
+        android:layout_width="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detailDescription"
+        android:layout_height="wrap_content" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

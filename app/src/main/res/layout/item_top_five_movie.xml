@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="5dp"
+    android:paddingVertical="5dp">
+
+    <ImageView
+        android:id="@+id/topFiveMovieImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/movie_image"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/endgame" />
+
+    <TextView
+        android:id="@+id/topFiveMovieTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/topFiveMovieImage"
+        app:layout_constraintStart_toStartOf="@+id/topFiveMovieImage"
+        app:layout_constraintTop_toBottomOf="@+id/topFiveMovieImage"
+        tools:text="Avengers: Endgame" />
+
+    <TextView
+        android:id="@+id/topFiveMovieRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/topFiveMovieTitle"
+        app:layout_constraintStart_toStartOf="@+id/topFiveMovieTitle"
+        app:layout_constraintTop_toBottomOf="@+id/topFiveMovieTitle"
+        tools:text="Rating: 7.3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

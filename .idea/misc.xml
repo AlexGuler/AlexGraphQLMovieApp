@@ -3,10 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.2655" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_associated_movies.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/fragment_browse_all.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/fragment_browse_genre.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1" />
-        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/fragment_movie_detail.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/layout/fragment_notifications.xml" value="0.31567028985507245" />
+        <entry key="app/src/main/res/layout/fragment_top_movies.xml" value="0.37604166666666666" />
+        <entry key="app/src/main/res/layout/item_genre.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/item_top_five_movie.xml" value="0.375" />
+        <entry key="app/src/main/res/layout/view_sorting_spinners.xml" value="0.375" />
         <entry key="app/src/main/res/menu/bottom_nav_menu.xml" value="0.37604166666666666" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2295" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.2295" />

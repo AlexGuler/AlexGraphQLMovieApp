@@ -1,6 +1,44 @@
 <resources>
     <string name="app_name">Podium Techinal Challenge</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="navi_top_movies_title">Top Movies</string>
+    <string name="navi_browse_all_title">All</string>
+    <string name="navi_browse_genre_title">Genre</string>
+
+    <string-array name="sort_array">
+        <item>Select Sort</item>
+        <item>ASC</item>
+        <item>DESC</item>
+    </string-array>
+
+    <string-array name="order_by_array">
+        <item>Select Order By</item>
+        <item>Title</item>
+        <item>Popularity</item>
+        <item>Vote Average</item>
+        <item>Vote Count</item>
+        <item>Original Title</item>
+        <item>Budget</item>
+        <item>Runtime</item>
+        <item>Release Date</item>
+        <item>Director</item>
+    </string-array>
+
+    <!-- Top 5 Movies Screen -->
+    <string name="movies_top_five_title">Movies: Top 5</string>
+    <string name="movie_image">Movie Image</string>
+    <string name="retry">Retry</string>
+
+    <!-- Browse By Genre Screen -->
+    <string name="browse_genre_title">Browse by Genre</string>
+    <string name="browse_genre_choose">Choose a Genre!</string>
+
+    <!-- Browse By All Screen -->
+    <string name="browse_by_all_title">Browse by All</string>
+
+    <!-- Detail View -->
+    <string name="detail_genre">Genre:</string>
+    <string name="detail_rating">Rating: %1$f</string>
+    <string name="detail_director">Director: %1$s</string>
+
+<!--    detail_rating-->
 </resources>
